@@ -60,7 +60,8 @@
           cursor: pointer;
           border-radius: 3px;
       }
-      /* 以下（滚动条样式）部分内容来源 csdn by xcLeigh
+      /*
+      以下（滚动条样式）部分内容来源 csdn by xcLeigh
       https://blog.csdn.net/weixin_43151418/article/details/115693767
       */
         .neiRong::-webkit-scrollbar {/*滚动条整体样式*/
@@ -77,6 +78,10 @@
           border-radius: 10px;
           background: #EDEDED;
         }
+      .top {
+        align-items: center;
+        justify-content: center;
+      }
     </style>
   </head>
   <body class="flex">
@@ -93,11 +98,11 @@
       >
         <img
           alt="logo"
-          src="https://file.avgt.top/img/icon/icon64.png"
+          src="../logo.png"
           width="40px"
           height="40px"
         />
-        <div style="margin-left: 10px">AvgTeam</div>
+        <div style="margin-left: 10px">Title</div>
       </div>
       <div class="flex white yinYing daoHang" onclick="window.open('../index.html', '_self')">Page 1</div>
       <div class="flex white yinYing daoHang" onclick="window.open('../page2', '_self')">Page 2</div>
@@ -114,7 +119,7 @@
     <!-- 主体 -->
     <div class="flex flex1 column white">
       <!-- 头部 -->
-      <div style="height: 60px; z-index: 2" class="white yinYing"></div>
+      <div style="height: 60px; z-index: 2" class="white yinYing flex top">写不出来页脚的我，是真的</div>
       <!-- 内容 -->
       <div class="flex flex1 neiRong" style="overflow: auto">
         <!-- 左 -->
@@ -124,7 +129,7 @@
             <div class="shuJu white yinYing flex1 mgr8"></div>
             <div class="shuJu white yinYing flex1 mgr8"></div>
             <div class="shuJu white yinYing flex1 mgr8"></div>
-            <div class="shuJu white yinYing flex1 mgr8"></div>
+            <div class="shuJu white yinYing flex1"></div>
           </div>
           <!-- 数据区 -->
           <div class="flex column">
