@@ -60,6 +60,23 @@
           cursor: pointer;
           border-radius: 3px;
       }
+      /* 以下（滚动条样式）部分内容来源 csdn by xcLeigh
+      https://blog.csdn.net/weixin_43151418/article/details/115693767
+      */
+        .neiRong::-webkit-scrollbar {/*滚动条整体样式*/
+          width: 5px;     /*高宽分别对应横竖滚动条的尺寸*/
+          height: 3px;
+        }
+        .neiRong::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+          border-radius: 10px;
+          box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+          background: #535353;
+        }
+        .neiRong::-webkit-scrollbar-track {/*滚动条里面轨道*/
+          box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+          border-radius: 10px;
+          background: #EDEDED;
+        }
     </style>
   </head>
   <body class="flex">
@@ -86,6 +103,13 @@
       <div class="flex white yinYing daoHang" onclick="window.open('../page2', '_self')">Page 2</div>
       <div class="flex white yinYing daoHang" onclick="window.open('../page3', '_self')">Page 3</div>
       <div class="flex white yinYing daoHang" onclick="window.open('../page4', '_self')">Page 4</div>
+      <div style="height: 30px;" class="flex"></div>
+      <div class="flex white yinYing daoHang" onclick="window.open('.', '_self')">MorePage...</div>
+      <div class="flex white yinYing daoHang" onclick="window.open('.', '_self')">MorePage...</div>
+      <div class="flex white yinYing daoHang" onclick="window.open('.', '_self')">MorePage...</div>
+      <div class="flex white yinYing daoHang" onclick="window.open('.', '_self')">MorePage...</div>
+      <div style="height: 30px;" class="flex"></div>
+      <div class="flex white yinYing daoHang" onclick="window.open('.', '_self')">关于</div>
     </div>
     <!-- 主体 -->
     <div class="flex flex1 column white">
@@ -114,12 +138,14 @@
           <!-- 右 -->
           <div style="flex: 1" class="flex flex1 column yinYing">
             <div style="height: 220px; border-radius: 3px;" class="white yinYing mgr8 mgt8">
-                <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=145 src="//music.163.com/outchain/player?type=2&id=1455699833&auto=0&height=105"></iframe>
+                <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=100% style="max-height: 140px;" src="//music.163.com/outchain/player?type=2&id=1455699833&auto=0&height=105"></iframe>
             </div>
             <div style="height: 100vh; border-radius: 3px;" class="white yinYing mgr8 mgt8"></div>
           </div>
         </div>
       </div>
     </div>
+
+    
   </body>
 </html>
