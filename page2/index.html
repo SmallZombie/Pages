@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLex 布局</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      /* * {
+        border: 1px solid #333;
+      } */
+      .white {
+        background-color: white;
+      }
+      .flex {
+        display: flex;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .yinYing {
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+      }
+      .main {
+        display: flex;
+        flex: 1;
+      }
+      .shuJu {
+          height: 100px;
+          border-radius: 3px;
+      }
+      .lieBiaoXiang {
+          height: 160px;
+          border-radius: 5px;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .daoHang {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 4px;
+          height: 50px; 
+          cursor: pointer;
+          border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!-- 导航 -->
+    <div style="width: 200px" class="white column yinYing">
+      <div
+        style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid #999;
+        "
+        class="flex"
+      >
+        <img
+          alt="logo"
+          src="https://file.avgt.top/img/icon/icon64.png"
+          width="40px"
+          height="40px"
+        />
+        <div style="margin-left: 10px">AvgTeam</div>
+      </div>
+      <div class="flex white yinYing daoHang" onclick="window.open('../index.html', '_self')">Page 1</div>
+      <div class="flex white yinYing daoHang" onclick="window.open('../page2', '_self')">Page 2</div>
+      <div class="flex white yinYing daoHang" onclick="window.open('../page3', '_self')">Page 3</div>
+      <div class="flex white yinYing daoHang" onclick="window.open('../page4', '_self')">Page 4</div>
+    </div>
+    <!-- 主体 -->
+    <div class="flex flex1 column white">
+      <!-- 头部 -->
+      <div style="height: 60px; z-index: 2" class="white yinYing"></div>
+      <!-- 内容 -->
+      <div class="flex flex1 neiRong" style="overflow: auto">
+        <!-- 左 -->
+        <div style="flex: 3" class="flex column mg8">
+          <!-- 仪表盘 -->
+          <div class="flex">
+            <div class="shuJu white yinYing flex1 mgr8"></div>
+            <div class="shuJu white yinYing flex1 mgr8"></div>
+            <div class="shuJu white yinYing flex1 mgr8"></div>
+            <div class="shuJu white yinYing flex1 mgr8"></div>
+          </div>
+          <!-- 数据区 -->
+          <div class="flex column">
+            <div class="lieBiaoXiang mgt8 white yinYing"></div>
+            <div class="lieBiaoXiang mgt8 white yinYing"></div>
+            <div class="lieBiaoXiang mgt8 white yinYing"></div>
+            <div class="lieBiaoXiang mgt8 white yinYing"></div>
+            <div class="lieBiaoXiang mgt8 white yinYing"></div>
+          </div>
+        </div>
+          <!-- 右 -->
+          <div style="flex: 1" class="flex flex1 column yinYing">
+            <div style="height: 220px; border-radius: 3px;" class="white yinYing mgr8 mgt8">
+                <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=145 src="//music.163.com/outchain/player?type=2&id=1455699833&auto=0&height=105"></iframe>
+            </div>
+            <div style="height: 100vh; border-radius: 3px;" class="white yinYing mgr8 mgt8"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
