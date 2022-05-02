@@ -12,7 +12,6 @@ function isMobile() {
   }
 }
 if (isMobile()) {
-  location.href = "../page4";
 } else {
   location.href = "../page2";
 }
