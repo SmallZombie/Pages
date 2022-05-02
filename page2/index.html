@@ -5,85 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <style>
-      body {
-        margin: 0;
-        height: 100vh;
-        background-color: #eee;
-      }
-      /* * {
-        border: 1px solid #333;
-      } */
-      .white {
-        background-color: white;
-      }
-      .flex {
-        display: flex;
-      }
-      .flex1 {
-        flex: 1;
-      }
-      .column {
-        flex-direction: column;
-      }
-      .yinYing {
-        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
-          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
-      }
-      .main {
-        display: flex;
-        flex: 1;
-      }
-      .shuJu {
-          height: 100px;
-          border-radius: 3px;
-      }
-      .lieBiaoXiang {
-          height: 160px;
-          border-radius: 5px;
-      }
-      .mg8 {
-        margin: 8px;
-      }
-      .mgr8 {
-        margin-right: 8px;
-      }
-      .mgt8 {
-        margin-top: 8px;
-      }
-      .daoHang {
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          margin: 4px;
-          height: 50px; 
-          cursor: pointer;
-          border-radius: 3px;
-      }
-      /*
-      以下（滚动条样式）部分内容来源 csdn by xcLeigh
-      https://blog.csdn.net/weixin_43151418/article/details/115693767
-      */
-        .neiRong::-webkit-scrollbar {/*滚动条整体样式*/
-          width: 5px;     /*高宽分别对应横竖滚动条的尺寸*/
-          height: 3px;
-        }
-        .neiRong::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
-          border-radius: 10px;
-          box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
-          background: #535353;
-        }
-        .neiRong::-webkit-scrollbar-track {/*滚动条里面轨道*/
-          box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
-          border-radius: 10px;
-          background: #EDEDED;
-        }
-      .top {
-        align-items: center;
-        justify-content: center;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="../css.css">
+    <script type="text/javascript" src="../js.js"></script>
   </head>
+
   <body class="flex">
     <!-- 导航 -->
     <div style="width: 200px" class="white column yinYing">
@@ -142,15 +67,17 @@
         </div>
           <!-- 右 -->
           <div style="flex: 1" class="flex flex1 column yinYing">
+            <!-- 模块区 -->
             <div style="height: 220px; border-radius: 3px;" class="white yinYing mgr8 mgt8">
                 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=100% style="max-height: 140px;" src="//music.163.com/outchain/player?type=2&id=1455699833&auto=0&height=105"></iframe>
             </div>
-            <div style="height: 100vh; border-radius: 3px;" class="white yinYing mgr8 mgt8"></div>
+            <!-- 消息区 -->
+            <div style="height: 100vh; border-radius: 3px;" class="white yinYing mgr8 mgt8">
+              <div style="height: 45px;" class="flex yinYing xiaoXi">tip: 手机端会自动跳转 page4 哒</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    
   </body>
 </html>
