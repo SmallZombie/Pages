@@ -1,1 +1,1 @@
-# SmallZombie.github.io
+[github.io](//SmallZombie.github.io/)
